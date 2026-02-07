@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>EV Recharge Bunk</title>
+  <link rel="stylesheet" href="../css/home.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">⚡ EV Recharge Bunk</div>
+  
+</header>
+
+<section class="hero enhanced-hero">
+  <div class="hero-bg"></div>
+
+  <h1>Find & Book EV Charging Stations Easily</h1>
+  <p>
+    Discover nearby EV charging stations, check real-time availability,
+    and book slots seamlessly across India.
+  </p>
+
+  <div class="stats">
+    <div class="stat-card">
+      <div class="stat-icon">⚡</div>
+      <h2 data-count="50">30+</h2>
+      <span>EV Stations</span>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-icon">📍</div>
+      <h2 data-count="12">12</h2>
+      <span>States Covered</span>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-icon">🔌</div>
+      <h2 data-count="200">100+</h2>
+      <span>Slots Available</span>
+    </div>
+  </div>
+
+  <div class="hero-actions">
+    <button class="primary" onclick="location.href='../index.html'">
+  🔍 Find EV Station
+</button>
+      
+  </div>
+
+
+</section>
+
+
+<!-- MAP PREVIEW -->
+<section class="map-section">
+  <h2>EV Charging Stations Across India</h2>
+  <div id="map"></div>
+</section>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+  const map = L.map("map").setView([22.9734, 78.6569], 5);
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution: "&copy; OpenStreetMap contributors"
+  }).addTo(map);
+</script>
+
+</body>
+</html>

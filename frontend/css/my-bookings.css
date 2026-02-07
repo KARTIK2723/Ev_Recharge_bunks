@@ -1,0 +1,158 @@
+/* Page background */
+body {
+  background: linear-gradient(180deg, #f8fafc, #eef2f7);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+/* Header */
+.page-header {
+  max-width: 900px;
+  margin: 40px auto 20px;
+  padding: 0 16px;
+}
+
+.page-header h1 {
+  font-size: 34px;
+  margin-bottom: 6px;
+}
+
+.page-header p {
+  font-size: 15px;
+  color: #6b7280;
+}
+
+/* Booking list wrapper */
+#bookingList {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 16px 40px;
+}
+
+/* Booking card */
+.booking-card {
+  background: white;
+  border-radius: 18px;
+  padding: 22px 24px;
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.booking-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 45px rgba(0,0,0,0.12);
+}
+
+/* Left info */
+.booking-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.booking-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.booking-top h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+/* Badge */
+.badge {
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.badge.active {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: white;
+  box-shadow: 0 6px 18px rgba(34,197,94,0.35);
+}
+
+/* Meta text */
+.meta {
+  font-size: 14px;
+  color: #475569;
+}
+
+/* Right actions */
+.booking-action {
+  display: flex;
+  gap: 12px;
+}
+
+/* Navigate button */
+.nav-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.nav-btn:hover {
+  background: #1d4ed8;
+}
+
+/* Cancel button */
+.cancel-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.cancel-btn:hover {
+  background: #dc2626;
+}
+
+/* Empty state */
+.empty-state {
+  text-align: center;
+  margin-top: 100px;
+  color: #6b7280;
+}
+
+.empty-state h2 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.primary-btn {
+  display: inline-block;
+  margin-top: 16px;
+  background: #22c55e;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.primary-btn:hover {
+  background: #16a34a;
+}
+
+/* Utility */
+.hidden {
+  display: none;
+}
+.timer {
+  font-size: 14px;
+  font-weight: 600;
+  color: #dc2626;
+}

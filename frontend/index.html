@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>EV Recharge Bunk</title>
+  <link rel="icon" href="data:,">
+
+  <!-- Leaflet CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="./css/tutorial.css">
+
+</head>
+<body>
+  <!-- Tutorial Overlay -->
+  <div id="tutorialOverlay" class="tutorial-overlay hidden">
+    <div class="tutorial-highlight"></div>
+
+    <div class="tutorial-box">
+      <h3 id="tutorialTitle"></h3>
+      <p id="tutorialText"></p>
+
+      <div class="tutorial-actions">
+        <button id="tutorialSkip">Skip</button>
+        <button id="tutorialNext">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="stateModal" class="modal">
+    <div class="modal-content">
+      <h2>Select Your State</h2>
+      <p>We’ll show EV charging stations available in your state</p>
+
+      <select id="stateSelect">
+        <option value="">Select State</option>
+        <option value="DL">Delhi</option>
+        <option value="MH">Maharashtra</option>
+        <option value="KA">Karnataka</option>
+        <option value="TN">Tamilnadu</option>
+        <option value="GJ">Gujrat</option>
+        <option value="RJ">Rajasthan</option>
+        <option value="UP">Uttar Pradesh</option>
+        <option value="TS">Telangana</option>
+        <option value="WB">West Bengal</option>
+        <option value="MP">Madhya Pradesh</option>
+      </select>
+
+
+      <button id="confirmState">Continue</button>
+    </div>
+  </div>
+
+
+  <header class="navbar">
+    <div class="nav-left">
+      ⚡ EV Recharge Bunk
+    </div>
+
+    <div class="nav-center">
+  <div class="search-wrapper">
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search EV bunk by name or nearby..."
+      autocomplete="off"
+    />
+
+    <div id="searchDropdown" class="search-dropdown hidden">
+      <div class="dropdown-item" data-type="nearby" data-range="1">
+        📍 EV bunks within 1 km
+      </div>
+      <div class="dropdown-item" data-type="nearby" data-range="2">
+        📍 EV bunks within 2 km
+      </div>
+
+      <div class="dropdown-divider"></div>
+      <div id="recentSearches"></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+    <div class="nav-right">
+      <button class="hamburger" id="hamburgerBtn">☰</button>
+      <div class="nav-user hidden" id="userMenu">
+        <span class="user-name" id="userText"></span>
+
+        <div class="user-dropdown">
+          <div class="user-info">
+            <strong id="dropdownName"></strong>
+            <small id="dropdownEmail"></small>
+          </div>
+
+          
+          <a href="pages/my-bookings.html">📄 My Bookings</a>
+          <div class="dropdown-divider"></div>
+          <a id="logoutBtn">🚪 Logout</a>
+        </div>
+      </div>
+
+      <button id="authBtn" class="auth-pill">Login / Sign Up</button>
+
+      
+
+    </div>
+  </header>
+
+
+  <!-- Hamburger Menu -->
+  <div id="menu" class="menu hidden">
+    <a href="#" onclick="location.href='pages/home.html'"><span>🏠</span> Home</a>
+    
+    <a href="#" id="changeStateBtn"><span>🌍</span> Change State</a>
+    <a href="#" id="howToUseBtn"><span>❓</span> How to Use</a>
+  </div>
+
+
+
+  <div class="layout">
+    <aside class="sidebar">
+      <h3>Nearby Charging Stations</h3>
+      <p class="sidebar-sub">
+        Showing charging stations in selected state
+      </p>
+
+      <div id="bunkList"></div>
+    </aside>
+
+    <div id="map"></div>
+  </div>
+
+  
+  <div class="modal hidden" id="bookingModal">
+    <div class="modal-card">
+      <h3 id="modalBunkName">Confirm Booking</h3>
+
+      <div class="modal-row">
+        <label for="slotCount">Slots</label>
+        <select id="slotCount">
+          <option value="1">1 Slot</option>
+          <option value="2">2 Slots</option>
+        </select>
+      </div>
+
+      <div class="modal-actions">
+        <button id="confirmBooking" class="btn-primary">
+          Confirm
+        </button>
+        <button id="cancelBooking" class="btn-outline">
+          Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Leaflet -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<!-- Your app entry (MODULE) -->
+<script type="module" src="js/map.js"></script>
+<script type="module" src="js/firebase.js"></script>
+<script type="module" src="js/auth.js"></script>
+<script type="module" src="js/booking.js"></script>
+<script type="module" src="js/search.js"></script>
+<script type="module" src="js/tutorial.js"></script>
+<script type="module" src="js/profile.js"></script>
+<div id="bookingsList"></div>
+
+
+
+<script src="js/app.js"></script>
+
+
+</body>
+
+</html>

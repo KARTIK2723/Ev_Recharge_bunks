@@ -1,0 +1,63 @@
+/* Overlay */
+.tutorial-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 9999;
+}
+
+.tutorial-overlay.hidden {
+  display: none;
+}
+
+/* Highlight */
+.tutorial-highlight {
+  position: absolute;
+  border: 3px solid #00ff99;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 255, 153, 0.9);
+  background: rgba(255, 255, 255, 0.15);
+  z-index: 10001;
+  pointer-events: none;
+}
+
+/* ✅ FIXED TUTORIAL BOX */
+.tutorial-box {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+
+  width: 340px;
+  padding: 18px 22px;
+
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+
+  z-index: 10002;
+}
+
+/* Actions */
+.tutorial-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 14px;
+}
+
+.tutorial-actions button {
+  padding: 7px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#tutorialNext {
+  background: #00c853;
+  color: white;
+}
+
+#tutorialSkip {
+  background: transparent;
+  color: #888;
+}

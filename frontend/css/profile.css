@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.profile-navbar {
+  height: 60px;
+  background: linear-gradient(90deg, #050b1e, #0b1c3f);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+.logout-btn {
+  background: #ff5252;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Profile Card */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 60px);
+}
+
+.profile-card {
+  background: white;
+  width: 340px;
+  padding: 28px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.avatar {
+  font-size: 64px;
+  margin-bottom: 12px;
+}
+
+.profile-card h2 {
+  margin-bottom: 6px;
+}
+
+.profile-card p {
+  color: #555;
+  font-size: 14px;
+}
+
+.divider {
+  height: 1px;
+  background: #e0e0e0;
+  margin: 18px 0;
+}
+
+.profile-actions button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.profile-actions button:first-child {
+  background: #00c853;
+  color: white;
+}
+
+.profile-actions button:last-child {
+  background: #e3f2fd;
+}
