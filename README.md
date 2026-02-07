@@ -97,5 +97,13 @@ Ev_Recharge_bunks/
 <img width="1917" height="887" alt="ev_ss4" src="https://github.com/user-attachments/assets/b6cddec4-c326-4ae1-b98f-63dd3e367bbc" />
 <img width="1918" height="912" alt="ev_ss6" src="https://github.com/user-attachments/assets/f81b8527-c625-48f7-a21e-857c39c6fbed" />
 
+## 👨‍💻 Author
+
+**Kartik Sharma**  
+Full Stack Developer | B.Tech CSE  
+
+📧 Email: ks2956484@gmail.com  
+🔗 GitHub: https://github.com/KARTIK2723
+
 
 
