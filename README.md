@@ -1,0 +1,93 @@
+
+# ⚡ EV Recharge Bunk
+
+A full-stack web platform to **discover, navigate, and book EV charging stations** with an interactive map and guided user experience.
+
+---
+
+## 🚀 Features
+
+- 🗺 **Interactive Map**
+  - View nearby EV charging stations using Leaflet
+  - Live location support
+
+- 🧭 **Guided Tutorial**
+  - Step-by-step walkthrough for new users
+  - Explains state selection, bunks, navigation, and bookings
+
+- 📍 **State-Based Filtering**
+  - Select a state to load relevant EV stations
+  - Clean and intuitive UI flow
+
+- 🔍 **Smart Search**
+  - Search EV bunks by name or nearby location
+
+- 🔐 **Authentication (Firebase)**
+  - Login / Signup system
+  - User session persistence across pages
+
+- 📄 **My Bookings**
+  - View and manage booked charging slots
+
+- 👤 **Profile Page**
+  - Displays user name and email dynamically
+  - Logout functionality
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend:** HTML, CSS, JavaScript  
+- **Maps:** Leaflet.js  
+- **Backend / Auth:** Firebase Authentication  
+- **Database:** Firebase Firestore  
+- **Hosting Ready:** Firebase Hosting  
+
+---
+
+## 📁 Project Structure
+
+```text
+Ev_Recharge_bunks/
+├── frontend/
+│   ├── index.html
+│   ├── assets/
+│   │   └── icons/
+│   ├── css/
+│   │   ├── auth.css
+│   │   ├── home.css
+│   │   ├── main.css
+│   │   ├── map.css
+│   │   ├── my-bookings.css
+│   │   ├── profile.css
+│   │   └── tutorial.css
+│   ├── js/
+│   │   ├── app.js
+│   │   ├── auth.js
+│   │   ├── auth-test.js
+│   │   ├── booking.js
+│   │   ├── bunk.js
+│   │   ├── firebase.js
+│   │   ├── map.js
+│   │   ├── myBooking.js
+│   │   ├── search.js
+│   │   └── tutorial.js
+│   └── pages/
+│       ├── bunk-details.html
+│       ├── dashboard.html
+│       ├── home.html
+│       ├── login.html
+│       ├── register.html
+│       ├── my-bookings.html
+│       └── page-test.html
+├── functions/
+│   ├── index.js
+│   ├── package.json
+│   └── package-lock.json
+├── firebase.json
+├── .firebaserc
+├── .gitignore
+└── README.md
+
+
+
