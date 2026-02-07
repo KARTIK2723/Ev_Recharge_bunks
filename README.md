@@ -88,6 +88,14 @@ Ev_Recharge_bunks/
 ├── .firebaserc
 ├── .gitignore
 └── README.md
+```
+## 📸 Screenshots
+<img width="1918" height="911" alt="ev_ss1" src="https://github.com/user-attachments/assets/75a94860-a776-4671-b7e2-b006670cf11b" />
+<img width="862" height="550" alt="ev_ss5" src="https://github.com/user-attachments/assets/b2762ac9-3552-422b-891e-f4f92e438299" />
+<img width="1918" height="910" alt="ev_ss2" src="https://github.com/user-attachments/assets/d6462853-f8e2-413f-93f8-062ce04d50a9" />
+<img width="1919" height="396" alt="ev_ss3" src="https://github.com/user-attachments/assets/7c0191b5-7fb5-42fe-8089-8661bb15e7c7" />
+<img width="1917" height="887" alt="ev_ss4" src="https://github.com/user-attachments/assets/b6cddec4-c326-4ae1-b98f-63dd3e367bbc" />
+<img width="1918" height="912" alt="ev_ss6" src="https://github.com/user-attachments/assets/f81b8527-c625-48f7-a21e-857c39c6fbed" />
 
 
 
